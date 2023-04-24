@@ -4,8 +4,8 @@ const multiply = (a, b) => a * b // added brackets around a,b and removed bracke
 
 // function declaration called 'internal'
 function internal() { 
-	const added = add(parseFloat(this.a), parseFloat(this.b)) 
-	const multiplied = multiply(parseFloat(this.c), added)
+	const added = add(parseFloat(this.internal.a), parseFloat(this.internal.b)) 
+	const multiplied = multiply(parseFloat(this.internal.c), added)
 	//console.log internal function
 	console.log(multiplied) 
 }
